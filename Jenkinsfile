@@ -56,7 +56,7 @@ pipeline{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build --build-arg TMDB_V3_API_KEY=vfdbtdsbfbrbsgfbsbsbvbsdfbvdv -t netflix ."
                        sh "docker tag netflix anurag1020/netflix:latest "
-                       sh "docker push anurag@1020/netflix:latest "
+                       sh "docker push anurag1020/netflix:latest "
                     }
                 }
             }
